@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 835px;
+
+  background-image: url("../img/gradientbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 767px) {
+  body {
+    height: 100vh;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-start .row {
+  padding: 60px;
+  background: rgba(245, 247, 255, 0.85);
+  border-radius: 10px;
+}
+
+.txt h1 {
+  font-size: 56px;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.txt p {
+  width: 450px;
+  height: 76px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+}
+
+.btn-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+
+  width: 100%;
+  height: 60px;
+
+  background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+  box-shadow: 0px 6px 18px #9cadf2;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btn-style:hover {
+  color: #fff;
+  transform: scale(1.01) translateY(-2px);
+}
+
+.h_100vh {
+  /* height: 100vh; */
+}
+
+.form-group {
+  position: relative;
+}
+.form-group img {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  z-index: 1;
+  transform: translateY(-50%);
+  border-right: 1px solid #dbe3ff;
+  width: 36px;
+  height: 20px;
+}
+.form-group .form-control {
+  padding: 8px 20px;
+  padding-left: 60px;
+  height: 60px;
+  border: 1px solid #dbe3ff;
+  color: #3b3b3b;
+  border-radius: 10px;
+}
+
+.error_msg {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 11px;
+  color: tomato;
+}
